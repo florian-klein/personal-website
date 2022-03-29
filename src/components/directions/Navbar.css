@@ -1,0 +1,213 @@
+
+
+.navbar {
+  background: rgb(128,34,28);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  top: 0;
+  position:static;
+  z-index: 2;
+}
+
+.navbar.active{
+  background: rgb(128,34,28);
+  box-shadow: none;
+  height: 70px;
+}
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  transition: background-color 1000ms ease-in;
+
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 3vw;
+  margin-right: 2vw;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  white-space: nowrap;
+}
+
+.navbar-logo:hover{
+  border-bottom: #fff;
+}
+
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.underlined{
+  border-bottom: #fff;
+  padding-bottom: 4px;
+}
+
+.nav-item {
+  height: 70px;
+}
+
+.navbar-logo:visited{
+  color:#fff;
+}
+
+
+.nav-links {
+  /* Hier für die Links eintragen im Desktop */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links:visited{
+  color: #fff;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 970px) {
+  
+  .navbar-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    transition: background-color 1000ms linear;
+  
+  }
+
+  .nav-item{
+    border: rgb(128,34,28);
+  }
+
+
+  .navbar {
+    background: rgb(128,34,28);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    position:static;
+  }
+
+  .navbar.active{
+    background: transparent;
+    height: 60px;
+  }
+
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: rgb(128,34,28);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    color: #fff;
+    display: table;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    padding-left: 2%;
+  }
+
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 12.5px;
+    right: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    height:fit-content;
+    background-color: transparent;
+    /*rgb(128,34,28)*/
+    
+  }  
+
+  .nav-links:visited{
+    color:#ffffff;
+  }
+  
+}
+
+
+
+
+
+
+
+
