@@ -2,7 +2,7 @@
 
 .navbar {
   background: rgb(128,34,28);
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +15,14 @@
 .navbar.active{
   background: rgb(128,34,28);
   box-shadow: none;
-  height: 70px;
+  height: 60px;
 }
 
 
 .navbar-container {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 60px;
   width: 100%;
   transition: background-color 1000ms ease-in;
 
@@ -66,7 +66,7 @@
 }
 
 .nav-item {
-  height: 70px;
+  height: 60px;
 }
 
 .navbar-logo:visited{
@@ -102,7 +102,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 960px) {
   
   .navbar-container {
     display: flex;
@@ -143,7 +143,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 60px);
     position: absolute;
     top: 60px;
     left: -100%;

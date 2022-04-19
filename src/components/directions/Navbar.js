@@ -86,7 +86,9 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+          <a href='mailto:contact@florianklein.me'>
+            {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+          </a>
         </div>
       </nav>
     </>
